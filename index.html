@@ -3,46 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resete.css">
     <link rel="stylesheet" href="style.css">
-    
     <title>FORD-ENTER</title>
 </head>
 <body>
     <header>
-        <div id="header-container">
+        <div class="header-container">
             <img src="img/logo-ford-256.png" alt="Logo da Ford" class="logo-header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carros.html">Lançamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <div class="main-container">
-            <h2>Home</h2>
-            <h2>Lançamento</h2>
-            <h2>Contato</h2>
-        </div>
         <img src="img/imagem_1.jpg" alt="Imagem do carro de lançamento" class="carro-destaque">
+        <p>Essa é a nova Ranger Ford 2022. Verifique novidades <a href="novidades.html">aqui.</a></p>
     </main>
 
     <footer>
-        <div class="footer-content">
-           
-            <div class="social-icons">
-                <a href="https://www.facebook.com/FordBrasil">
+        <section class="footer-container">
+            <p id="redes_footer">Redes Sociais</p>
+            <section class="social-icons">
+                <a href="https://www.facebook.com/FordBrasil" target="_blank" rel="noopener noreferrer">
                     <img src="img/facebook-50.png" alt="Facebook">
                 </a>
-                <a href="https://www.youtube.com/fordbrasil">
+                <a href="https://www.youtube.com/fordbrasil" target="_blank" rel="noopener noreferrer">
                     <img src="img/youtube-squared-50.png" alt="YouTube">
                 </a>
-                <a href="https://www.instagram.com/fordbrasil/">
+                <a href="https://www.instagram.com/fordbrasil/" target="_blank" rel="noopener noreferrer">
                     <img src="img/instagram-logo-50.png" alt="Instagram">
-                    
                 </a>
-            </div>
-
-            <img src="img/ford-96.png" alt="Logo Ford" class="logo-footer">
-                <p>&copy; 2025 Ford. Todos os direitos reservados</p>
-        </div>
+            </section>
+            <p id="copyright_footer">&copy; 2025 Ford. Todos os direitos reservados</p>
+            <div class="logo-footer"><img src="img/ford-96.png" alt="Logo Ford" class="logo-footer"> </div>
+        </section>
     </footer>
 </body>
 </html>
