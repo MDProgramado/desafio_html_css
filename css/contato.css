@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #003DA5;
+    --secondary-color: #000000;
+    --hover-color: #ffcc00;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +13,9 @@
    body {
     
     font: Arial, sans-serif;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
  header {
@@ -18,42 +25,49 @@
     top: 0;
     width: 100%;
     height: 100px;
-    color: #003DA5;
+    color: var(--primary-color);
     box-shadow:#2D2D2D 2px 0 10px;
   }
 
-#header_container {
+.header_container {
    
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  nav ul { 
-    color: #003DA5;
+  nav ul {
     display: flex;
+    flex-direction: row;    
     justify-content: center;
+    align-items: center;
+    align-content: center;
     list-style: none;
+   ;
+    
+    
 }
 nav li {
    
-    color: #003DA5;
+    color: var(--secondary-color);
     margin: 0 15px; 
 }
 
 nav a {
     
-    color: #003DA5;
+    color: var(--secondary-color);
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffcc00; 
+    color: var(--hover-color); 
 
 }
   
 .logo-header {
-    
+    display: flex;
+    align-items:flex-start;
     width: 150px;
+    align-items: center;
     height: auto;
     transition: transform 0.2s ease;
 }
@@ -62,33 +76,35 @@ nav a:hover {
 }
 
 main {
+    flex: 1;
     position: relative;
-    top: 110px;
+    padding: 80px 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-  
     text-align: center;
 }
 
-.carro-destaque {
-    width: 70%;
+.carro-destaque {       
+    max-width: 70%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    padding: 15px auto;
 }
 
 
 footer {
     box-sizing: border-box;
-    background-color: #003DA5;
+    background-color: var(--primary-color);
     color: white;
     position: fixed;
+    margin-top: auto;
     bottom:0;
     width: 100%;
     height: 50px;
+    padding: 10px;
     
 }
 
@@ -132,6 +148,10 @@ footer {
     
     .social-icons img {
         font-size: small;
+    }
+
+    .carro-destaque {
+        max-width: 100%;
     }
     
 }
