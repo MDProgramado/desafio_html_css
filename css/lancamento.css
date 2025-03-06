@@ -197,8 +197,10 @@ footer {
         font-size: small;
     }
 
-    .carro-destaque {
-        max-width: 100%;
+    .main-container {
+        max-width:min-content;
+        max-height: min-content;
+        font-size: small;
     }
-    
+
 }
