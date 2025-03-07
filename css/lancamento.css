@@ -66,7 +66,7 @@ nav a:hover {
 .logo-header {
     display: flex;
     align-items:flex-start;
-    width: 150px;
+    width: 9.375rem;
     align-items: center;
     height: auto;
     transition: transform 0.2s ease;
@@ -78,21 +78,23 @@ nav a:hover {
 main {
     flex: 1;
     position: relative;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
     display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     text-align: center;
     color: var(--secondary-color);
+    
 }
 
-.video-main {
-    flex: 1;
-    position: relative;
+.video-main iframe{
+    top: 1;
+    width: 95vw;
+    height: 12.5rem;
    
 }
+
 
 .img-main {
     display: flex;
@@ -101,6 +103,7 @@ main {
     max-width: 100%;
     height: auto;
     transition: transform 0.2s ease;
+    padding: 0rem 1rem ;
 }
 
 .img-main img {
@@ -113,13 +116,22 @@ main {
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    padding: 0rem 1rem ;
 }
+
 
 .checkbox-main input {
     width: 25px;
     height: 25px;
     cursor: pointer;
     color: var(--primary-color);
+    padding: 0rem 1rem;
+
+}
+
+.info {
+    padding: 0rem 1.5rem;
+   margin-top: auto; 
 }
 
 #button-main{
@@ -132,6 +144,7 @@ main {
     height: 30px;
     transition: color 0.3;
     cursor: pointer;
+    
 
 }
 
@@ -184,6 +197,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .logo-header {
+        font-size: small;
+    }
+
+    .header_container {
+        font-size: small;
+    }
     
     .footer-container {
         font-size: small;
