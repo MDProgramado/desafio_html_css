@@ -12,13 +12,15 @@
 
    body {
     
-    font: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-bottom: 150px;
+  
   }
 
- header {
+  header {
     
     padding: 10px 15px;
     position: fixed;
@@ -27,14 +29,22 @@
     height: 100px;
     color: var(--primary-color);
     box-shadow:#2D2D2D 2px 0 10px;
+    z-index: 1000;
+    text-align: center;
   }
 
 .header_container {
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 0 20px; 
+    
   }
+
+  nav {
+    margin: auto;
+}
+  
   nav ul {
     display: flex;
     flex-direction: row;    
@@ -42,20 +52,17 @@
     align-items: center;
     align-content: center;
     list-style: none;
-   ;
-    
-    
 }
 nav li {
-   
     color: var(--secondary-color);
     margin: 0 15px; 
 }
 
 nav a {
-    
+
     color: var(--secondary-color);
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -66,7 +73,7 @@ nav a:hover {
 .logo-header {
     display: flex;
     align-items:flex-start;
-    width: 150px;
+    width: 9.375rem;
     align-items: center;
     height: auto;
     transition: transform 0.2s ease;
@@ -103,9 +110,9 @@ footer {
     position: fixed;
     margin-top: auto;
     bottom:0;
-    width: 100vw;
-    height: 50px;
-    padding: 10px;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
     
 }
 
@@ -115,13 +122,11 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: px;
+   
 }
 
 .social-icons {
     display: flex;  
-  
-   
 }
 
 .social-icons img {
@@ -131,14 +136,20 @@ footer {
 }
 
 .social-icons img:hover {
-    width: 60px;
-    height: 60px;
-    opacity: 0.8;
-    transition: all 0.5s;
+    transform: scale(1.1); 
+    
+    transition: transform 0.3s;
 }
 
 @media screen and (max-width: 768px) {
     
+    .footer-container {
+        font-size: medium;
+    }
+
+    .logo-header{
+        width: 25%;
+    }
     .footer-container {
         font-size: small;
     }
