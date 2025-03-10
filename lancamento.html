@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="lancamento.html">Lancamento</a></li>
+                    <li><a href="lancamento.html">Lançamento</a></li>
                     <li><a href="contato.html">Contato</a></li>
                    
                 </ul>
@@ -33,40 +33,35 @@
             
         </section>
         <section class="cars-main">
-            <section>
-                <div class="img-main">
-                    <img src="../img/storm.jpg" alt="Ford Storm"> 
-                    <img src="../img/XL Cabine.jpg" alt="Ford XL Cabine">
-                    <img src="../img/xls 2.2 diesel.jpg"alt="Ford XLS 2.2 Diesel">
-            </div>
-        </section> 
-
-        <section class="checkbox-main"> 
-                <div class="checkbox-item">
-                <input type="checkbox" id="storm_checkbox">
-                        <label for="storm_checkbox">Ford Storm 2.0 Disel 4x4 2023 <br> A partir de R$ 289.9901</label>
-                        <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at/">
-                            <img src="../img/info.png" alt="Mais informações" class="info">
-                        </a> 
-            </div>
-                <div class="checkbox-item">         
-                        <input type="checkbox" id="xl_checkbox">
-                        <label for="xl_checkbox" class="label">Ford XL Cabine Dupla 2023 <br> A partir de R$ 244.9901</label>
-                        <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/"> 
-                            <img src="../img/info.png" alt="Mais informações" class="info">
-                        </a>
+            <form>
+                <div class="car">
+                    <img src="../img/storm.jpg" alt="Ford Storm" class="cars">
+                    <input type="checkbox" id="storm_checkbox">
+                    <label for="storm_checkbox">Ford Storm 2.0 Diesel 4x4 2023 <br> A partir de R$ 289.9901</label>
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at/">
+                        <img src="../img/info.png" alt="Mais informações" class="info">
+                    </a> 
                 </div>
-                <div class="checkbox-item">    
-                    <input type="checkbox" id="xls_checkbox">
-                    <label for="xls_checkbox" class="label">Ford XLS 2.2 Diesel 2023 <br> A partir de R$ 264.4901
-                    </label>
+                <div class="car">
+                    <img src="../img/XL Cabine.jpg" alt="Ford XL Cabine" class="cars">
+                    <input type="checkbox" id="xl_checkbox">
+                    <label for="xl_checkbox" class="label">Ford XL Cabine Dupla 2023 <br> A partir de R$ 244.9901</label>
                     <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/"> 
                         <img src="../img/info.png" alt="Mais informações" class="info">
                     </a>
-                </div>    
+                </div>
+                <div class="car"> 
+                    <img src="../img/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="cars">
+                    <input type="checkbox" id="xls_checkbox">
+                    <label for="xls_checkbox" class="label">Ford XLS 2.2 Diesel 2023 <br> A partir de R$ 264.4901</label>
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/"> 
+                        <img src="../img/info.png" alt="Mais informações" class="info">
+                    </a>
+                </div>
             </form>
         </section> 
-        <button class="button-main">Comparar carros</button>
+        <button type="submit" class="button-main">Comparar carros</button>
+
     </main>
     <footer>
         <section class="footer-container">
