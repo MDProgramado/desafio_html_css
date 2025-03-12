@@ -10,7 +10,15 @@
     }
 
 /* Mdia query Lançamento */
+
+.car {
+        display: flex;
+        flex-direction: column;
+}
+        
     .cars-main {
+        display: flex;
+        flex-direction: column;
        font-size: small;
        align-items: center; 
 }
@@ -19,14 +27,29 @@
     height: auto;
 }
 
-    .cars-main .form {
-       font-size: small;
-        
+.cars-main form {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+.car img {
+        display: flex;
+        flex-direction: column;
+        width: 100px; 
+        height: 100%;
     }
 
-    .cars-main img {
-        width: 100px; 
-        height: auto;
+    .checkbox__container__img__info {
+       
+        padding: 40px;
+    }
+
+    .cars-main .info img {
+        width: ;
     }
 
     .cars-main .info {

@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(0, 61, 165);
+    --primary-color: #003da5;
     --secondary-color: #000000;
     --terciary-color: #ffffff;
-    --hover-color: #ffcc00;
+    --hover-color: #003da5;
 }
 * {
     box-sizing: border-box;
@@ -17,14 +17,14 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 150px;
+   
   
   }
 
   header {
     
     padding: 10px 15px;
-    position: fixed;
+    
     top: 0;
     width: 100%;
     height: 100px;
@@ -99,11 +99,10 @@ main {
 }
 
 .video-main iframe {
-    display: block;
+    
     width: 90vw;
-    max-width: 1200px;
-    max-height: 300px;
-
+    
+    aspect-ratio: 16/9;
 }
 
 .cars-main {
@@ -116,19 +115,16 @@ main {
     padding: 1rem;
 }
 
-.car:hover .info {
-        display: block;
-
-}
 
 .cars-main .car {
     display: flex;
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
-    max-width: 250px; 
-    padding: 0rem 2rem;
+    max-width: 100%; 
+    
     position: relative;
+    
 }
 
 .cars-main form {
@@ -137,14 +133,24 @@ main {
     font-size: x-small;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     width: 100%;
+    height: auto;
 }
+
+.checkbox {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    
+   
+} 
 
 
 .cars-main img {
     width: 100%; 
     height: auto;
+    min-width: 180px;
 }
 
 .checkbox__container__table {
@@ -158,6 +164,7 @@ main {
     text-align: center;
 }
 .checkbox__container__table td {
+    
     border: 1px solid var(--secondary-color);
     padding: 0.75rem;
     text-align: center;
@@ -183,7 +190,23 @@ main {
 .checkbox__container__texto__info {
     background-color: var(--cor-branca);
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
+    
+    
+    text-align: center;
+  }
+
+.checkbox{
+    display: block;
+    width: 100%;
+    align-items: center;
+    
+}
+
+label {
+    width: 100%;
+    max-width: 100%;
+    
 }
 
 .button-main{
@@ -214,13 +237,12 @@ footer {
     box-sizing: border-box;
     background-color: var(--primary-color);
     color: white;
-    position: fixed;
     margin-top: auto;
     
     bottom:0;
     width: 100%;
     height: auto;
-    padding: 20px 2px;
+    
     
     
 }
@@ -253,8 +275,6 @@ footer {
     transition: transform 0.3s;
 }
 
-.copyright_footer {
-    margin: auto;
-}
+
 
   
