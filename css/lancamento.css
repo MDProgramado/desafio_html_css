@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #003DA5;
+    --primary-color: rgb(0, 61, 165);
     --secondary-color: #000000;
+    --terciary-color: #ffffff;
     --hover-color: #ffcc00;
 }
 * {
@@ -28,6 +29,7 @@
     width: 100%;
     height: 100px;
     color: var(--primary-color);
+    background-color: var(--terciary-color);
     box-shadow:#2D2D2D 2px 0 10px;
     z-index: 1000;
     text-align: center;
@@ -114,6 +116,11 @@ main {
     padding: 1rem;
 }
 
+.car:hover .info {
+        display: block;
+
+}
+
 .cars-main .car {
     display: flex;
     flex-direction: column; 
@@ -121,6 +128,7 @@ main {
     text-align: center; 
     max-width: 250px; 
     padding: 0rem 2rem;
+    position: relative;
 }
 
 .cars-main form {
@@ -139,10 +147,45 @@ main {
     height: auto;
 }
 
-.cars-main .info {
-    width: 15px; 
-    height: auto;
+.checkbox__container__table {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+.checkbox__container__table th {
+    border: 1px solid var(--secondary-color);
+    padding: 0.75rem;
+    text-align: center;
+}
+.checkbox__container__table td {
+    border: 1px solid var(--secondary-color);
+    padding: 0.75rem;
+    text-align: center;
+}
+.info {
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--terciary-color);
+    border: 1px solid var(--secondary-color);
+    z-index: 1000;
+    padding: 1.5rem;
+    position: absolute;
+}
+.checkbox__container__texto__info:hover+.info {
+    display: contents;
+    opacity: 0.8;
+    
+}
+
+
+.checkbox__container__texto__info {
+    background-color: var(--cor-branca);
+    border: none;
+    cursor: pointer; 
+}
+
 .button-main{
   
     background-color: var(--primary-color);
@@ -154,6 +197,7 @@ main {
     height: 30px;
     transition: color 0.3s;
     cursor: pointer;
+    margin: auto;
     
 
 }
@@ -166,36 +210,42 @@ main {
 
 
 footer {
+        
     box-sizing: border-box;
     background-color: var(--primary-color);
     color: white;
     position: fixed;
     margin-top: auto;
+    
     bottom:0;
     width: 100%;
     height: auto;
-    padding: 20px 10px;
+    padding: 20px 2px;
+    
     
 }
 
 .footer-container{
+    padding: 10px;
+    margin: auto;
     display:flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-   
 }
 
 .social-icons {
+    padding: 0px 20px;
     display: flex;  
 }
 
 .social-icons img {
+    
     width: 30px;
     height: 30px;
     transition: opacity 0.2s ease;
 }
+
 
 .social-icons img:hover {
     transform: scale(1.1); 
@@ -203,55 +253,8 @@ footer {
     transition: transform 0.3s;
 }
 
-    @media (max-width: 768px) {
-        .cars-main {
-           font-size: small;
-           align-items: center; 
-    }
-    .cars-main .car {
-        width: 20%; 
-        height: auto;
-    }
-   
-        .cars-main .form {
-           font-size: small;
-            
-        }
-    
-        .cars-main img {
-            width: 100px; 
-            height: auto;
-        }
-    
-        .cars-main .info {
-            width: 20px;
-        }
-        
-        .button-main {
-            width: auto;
-            height: auto;
-        }
-        
-        .header-container { 
-            font-size: small;
-        }
-        
-        .footer-container {
-            font-size: small;
-        }
-    
-        .social-icons {
-            font-size: small;
-        }
-        
-        .social-icons img {
-            font-size: small;
-        }
-    
-        .main-container {
-            max-width:min-content;
-            max-height: min-content;
-            font-size: small;
-        }
-
+.copyright_footer {
+    margin: auto;
 }
+
+  

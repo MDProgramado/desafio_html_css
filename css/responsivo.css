@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+
+    .header-container { 
+        font-size: small;
+    }
+
+    /* Mdia query Home */
+    .palagrafo-main {
+        font-size: small;
+    }
+
+/* Mdia query Lançamento */
+    .cars-main {
+       font-size: small;
+       align-items: center; 
+}
+.cars-main .car {
+    width: 20%; 
+    height: auto;
+}
+
+    .cars-main .form {
+       font-size: small;
+        
+    }
+
+    .cars-main img {
+        width: 100px; 
+        height: auto;
+    }
+
+    .cars-main .info {
+        width: 20px;
+    }
+    
+    .button-main {
+        width: auto;
+        height: auto;
+    }
+
+/* Media query Contato */
+    .form-main {
+        padding: 10px; 
+    }
+
+    .form-group input, 
+    .form-group select {
+        padding: 10px
+    }
+    
+    
+    
+    .footer-container {
+        font-size: small;
+    }
+
+    .social-icons {
+        font-size: small;
+    }
+    
+    .social-icons img {
+        font-size: small;
+    }
+
+    .main-container {
+        max-width:min-content;
+        max-height: min-content;
+        font-size: small;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .header-container {
+        font-size: larger;
+    }
+
+    .main-container {
+        font-size: larger;
+    }
+
+    /* Mdia query Home */
+    .palagrafo-main {
+        font-size: larger;
+    }
+    
+/* Mdia query Lançamento */
+    .cars-main {
+        font-size: larger;
+    }
+    .cars-main .car {
+        width: 40%; 
+        height: auto;
+    }
+
+    .cars-main .form {
+        font-size: larger;
+         
+     }
+
+     .cars-main .info {
+        width: 20px;
+    }
+  
+     
+     .cars-main img {
+        width: 100%;
+        min-width: 100%; 
+        height: auto;
+    }
+     
+     .button-main {
+        width: auto;
+        height: auto;
+    }
+    .footer-container {
+        font-size: larger;
+    }
+    .social-icons img {
+        font-size: larger;
+    }
+
+    
+}
+

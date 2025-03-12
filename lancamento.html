@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/lancamento.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="icon" href="./img/ford-96.png"  sizes="512x512"  type="image/x-icon">
     <title>Lançamento</title>
 </head>
 <body>
@@ -33,52 +35,132 @@
             
         </section>
         <section class="cars-main">
-            <form>
+            <form action="" method="get">
                 <div class="car">
-                    <img src="../img/storm.jpg" alt="Ford Storm" class="cars">
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at/">
+                        <img src="../img/storm.jpg" alt="Ford Storm" class="cars">
+                    </a>     
                     <input type="checkbox" id="storm_checkbox">
                     <label for="storm_checkbox">Ford Storm 2.0 Diesel 4x4 2023 <br> A partir de R$ 289.9901</label>
-                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at/">
-                        <img src="../img/info.png" alt="Mais informações" class="info">
-                    </a> 
+                   
+                    <div class="checkbox__container__texto__info"><img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
+                </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Torque:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>2.0 Turbo Diesel</td>
+                                <td>170 cv</td>
+                                <td>41,3 kgfm</td>
+                                <td>4x4</td>
+                                <td>Automática de 6 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
                 </div>
                 <div class="car">
-                    <img src="../img/XL Cabine.jpg" alt="Ford XL Cabine" class="cars">
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/">
+                        <img src="../img/XL Cabine.jpg" alt="Ford XL Cabine" class="cars">
+                    </a>    
                     <input type="checkbox" id="xl_checkbox">
                     <label for="xl_checkbox" class="label">Ford XL Cabine Dupla 2023 <br> A partir de R$ 244.9901</label>
-                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/"> 
-                        <img src="../img/info.png" alt="Mais informações" class="info">
-                    </a>
+                     
+                    <div class="checkbox__container__texto__info">
+                        <img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
+                </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Torque:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>3.0 V6 EcoBoost</td>
+                                <td>292 cv</td>
+                                <td>58,3 kgfm</td>
+                                <td>4x4</td>
+                                <td>Automática de 10 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
                 </div>
                 <div class="car"> 
-                    <img src="../img/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="cars">
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/">
+                        <img src="../img/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="cars">
+                    </a>    
                     <input type="checkbox" id="xls_checkbox">
                     <label for="xls_checkbox" class="label">Ford XLS 2.2 Diesel 2023 <br> A partir de R$ 264.4901</label>
-                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/"> 
-                        <img src="../img/info.png" alt="Mais informações" class="info">
-                    </a>
+                    <div class="checkbox__container__texto__info"><img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
                 </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Torque:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>3.2 Turbo Diesel</td>
+                                <td>200 cv</td>
+                                <td>47,0 kgfm</td>
+                                <td>4x4</td>
+                                <td>Automática de 6 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    
+                </div>
+              
             </form>
+            <button class="button-main">Comparar carros</button>
         </section> 
-        <button type="submit" class="button-main">Comparar carros</button>
+        
 
     </main>
     <footer>
         <section class="footer-container">
             <p id="redes_footer">Redes Sociais</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/FordBrasil" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/FordBrasil" target="_blank">
                     <img src="../img/facebook-50.png" alt="Facebook">
                 </a>
-                <a href="https://www.youtube.com/fordbrasil" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@fordbrasil" target="_blank">
                     <img src="../img/youtube-squared-50.png" alt="YouTube">
                 </a>
-                <a href="https://www.instagram.com/fordbrasil/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/fordbrasil/" target="_blank">
                     <img src="../img/instagram-logo-50.png" alt="Instagram">
                 </a>
             </div>
             
-            <p id="copyright_footer">&copy; 2025 Ford. Todos os direitos reservados</p>
+            <p class="copyright_footer">&copy; 2025 Ford. Todos os direitos reservados</p>
             <div class="logo-footer"><img src="../img/ford-96.png" alt="Logo Ford" class="logo-footer"> </div>
         </section>
     </footer>
