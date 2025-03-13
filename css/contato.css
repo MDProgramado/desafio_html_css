@@ -181,7 +181,9 @@ footer {
 
 .social-icons {
     padding: 0px 20px;
-    display: flex;  
+    right: 0.625rem;
+    display: flex;
+     align-items: center;
 }
 
 .social-icons img {
