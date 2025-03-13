@@ -161,7 +161,6 @@ main {
 
 .checkbox__container__table th {
     border: 1px solid var(--secondary-color);
-    padding: 0.75rem;
     text-align: center;
 }
 .checkbox__container__table td {
