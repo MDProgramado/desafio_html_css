@@ -28,7 +28,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
     color: var(--primary-color);
     background-color: var(--terciary-color);
     box-shadow:#2D2D2D 2px 0 10px;
