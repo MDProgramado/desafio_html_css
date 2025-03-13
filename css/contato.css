@@ -153,44 +153,50 @@ input[type="submit"]:hover {
     background-color: var(--hover-color);
 }
 footer {
+        
     box-sizing: border-box;
     background-color: var(--primary-color);
     color: white;
-    position: relative;
+    position: fixed;
     margin-top: auto;
-    bottom: 0;
+    bottom:0;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 1.25rem 0.125rem;
+    
+    
 }
 
-.footer-content {
-    padding: 10px;
-    margin: 0 auto;
-    display: flex;
+.footer-container{
+    padding: 0.625rem;
+    margin: auto;
+    display:flex;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-media {
-    display: flex;
-    gap: 10px;
+.social-icons {
+    padding: 0rem 1.25rem;
+    display: flex;  
 }
 
-.social-media img {
-    width: 30px;
-    height: 30px;
+.social-icons img {
+    
+    width: 1.875rem;
+    height: 1.875rem;
     transition: opacity 0.2s ease;
 }
 
-.social-media img:hover {
-    transform: scale(1.05);
+
+.social-icons img:hover {
+    transform: scale(1.1); 
+    
     transition: transform 0.3s;
 }
 
-.logo-footer {
-    margin-left: auto;
-}
+
+
 
 
 
