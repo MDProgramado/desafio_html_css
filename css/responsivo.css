@@ -1,4 +1,22 @@
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .main-container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .header-container {
+        font-size: larger;
+    }
+
+    .main-container {
+        font-size: larger;
+    }
+
+    /* Mdia query Home */
+    p {
+        width: 100%;
+    }
+    
+
 
     .header-container { 
         font-size: small;
@@ -6,60 +24,60 @@
 
     /* Mdia query Home */
     .palagrafo-main {
-        font-size: small;
+        font-size: x-large;
     }
-
+}
 /* Mdia query Lançamento */
 
-.car {
-        display: flex;
-        flex-direction: column;
-}
-        
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* Seção de Carros */
     .cars-main {
         display: flex;
-        flex-direction: column;
-       font-size: small;
-       align-items: center; 
-}
-.cars-main .car {
-    width: 20%; 
-    height: auto;
-}
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 20px; 
+    }
 
-.cars-main form {
-    display: flex;
-    flex-direction: column;
-    font-size: x-small;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-
-.car img {
+    .cars-main .car {
+        width: 30%; 
         display: flex;
         flex-direction: column;
-        width: 100px; 
-        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cars-main .car img {
+        width: 100%; 
+        height: auto; 
+        max-width: 300px; 
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .checkbox__container__texto__info {
+        margin-top: 10px; 
     }
 
     .checkbox__container__img__info {
-       
-        padding: 40px;
-    }
-
-    .cars-main .info img {
-        width: ;
+        width: 24px; 
+        height: 24px;
     }
 
     .cars-main .info {
-        width: 20px;
-    }
-    
+        width: 100%; 
+        margin-top: 10px; 
+
     .button-main {
-        width: auto;
-        height: auto;
+        width: auto; 
+        padding: 10px 20px; 
+        margin-top: 10px; 
     }
+}
 
 /* Media query Contato */
     .form-main {
@@ -93,60 +111,182 @@
 
 }
 
-@media screen and (min-width: 768px) {
-    .main-container {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .header-container {
-        font-size: larger;
-    }
-
-    .main-container {
-        font-size: larger;
-    }
-
-    /* Mdia query Home */
-    .palagrafo-main {
-        font-size: larger;
-    }
-    
-/* Mdia query Lançamento */
-    .cars-main {
-        font-size: larger;
-    }
-    .cars-main .car {
-        width: 40%; 
-        height: auto;
-    }
-
-    .cars-main .form {
-        font-size: larger;
-         
-     }
-
-     .cars-main .info {
-        width: 20px;
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Header - Ajuste de proporções */
+    header {
+      height: 90px;
+      padding: 10px 20px;
     }
   
-     
-     .cars-main img {
-        width: 100%;
-        min-width: 100%; 
-        height: auto;
+    .logo-header {
+      width: 11rem; /* 176px */
     }
-     
-     .button-main {
-        width: auto;
-        height: auto;
+  
+    /* Navegação - Espaçamento maior */
+    nav li {
+      margin: 0 20px;
+      font-size: 1.05rem;
     }
-    .footer-container {
-        font-size: larger;
+  
+    /* Conteúdo principal - Layout adaptativo */
+    .main_container {
+      margin-top: 90px; /* Acompanha altura do header */
+      padding: 20px 40px;
     }
+  
+    /* Imagem destaque - Sombra mais suave */
+    .carro-destaque {
+      max-width: 90%;
+      box-shadow: inset 0 0 0 rgba(0, 61, 165, 0.4), 0 1rem 1rem rgba(0, 61, 165, 0.4);
+    }
+  
+    /* Textos - Melhor legibilidade */
+    .palagrafo-main {
+      max-width: 65ch;
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+  
+    /* Footer - Ajuste de espaçamento */
+    footer {
+      padding: 25px 15px;
+    }
+  
     .social-icons img {
-        font-size: larger;
+      width: 35px;
+      height: 35px;
+      margin: 0 10px;
+    }
+  
+    /* Grid de carros - 2 colunas */
+    .cars-main {
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .car {
+      flex: 1 1 22rem;
+      max-width: 22rem;
+    }
+  }
+
+@media (min-width: 1440px) {
+    
+    header {
+      height: 120px;
+      padding: 15px 30px;
+    }
+  
+    .logo-header {
+      width: 12.5rem; 
+    }
+  
+    nav li {
+      margin: 0 25px;
+      font-size: 1.1rem;
+    }
+  
+    .main_container {
+      margin-top: 120px; 
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    
+    .carro-destaque {
+      max-width: 80%;
+      margin: 2rem auto;
+      box-shadow: inset 0 0 0 rgba(0, 61, 165, 0.5), 0 1.5rem 1.5rem rgba(0, 61, 165, 0.5);
+    }
+  
+    
+    .palagrafo-main {
+      max-width: 80ch;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      padding: 3rem;
+    }
+  
+   
+    footer {
+      padding: 30px 20px;
+    }
+  
+    .footer-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+  
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      margin: 0 12px;
+    }
+  
+    .copyright_footer {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    
+    header {
+      height: 100px;
+      padding: 10px 20px;
+    }
+  
+    .logo-header {
+      width: 11rem; 
     }
 
+   
+    nav li {
+      margin: 0 20px;
+      font-size: 1.05rem;
+    }
+  
+   
+    .main_container {
+      margin-top: 90px; 
+      padding: 20px 40px;
+    }
+  
+   
+    .carro-destaque {
+      max-width: 90%;
+      box-shadow: inset 0 0 0 rgba(0, 61, 165, 0.4), 0 1rem 1rem rgba(0, 61, 165, 0.4);
+    }
+  
     
-}
+    .palagrafo-main {
+      max-width: 65ch;
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+  
+    
+      
+    }
+  
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      margin: 0 10px;
+    }
+  
+    
+    .cars-main {
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .car {
+      flex: 1 1 22rem;
+      max-width: 22rem;
+    }
+  
 
