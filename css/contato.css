@@ -199,7 +199,11 @@ footer {
     transition: transform 0.3s;
 }
 .logo-footer  {
-    padding: 10px;
+     display: flex;
+     align-items: center;
+    width: 9.375rem;
+    align-items: center;
+    height: auto;
 }
 .logo-footer img{
     width: auto;
