@@ -122,7 +122,7 @@ main {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin: auto;
 }
 
 .form-group label {
@@ -198,8 +198,10 @@ footer {
     
     transition: transform 0.3s;
 }
-
-.logo-footer {
+.logo-footer  {
+    padding: 10px;
+}
+.logo-footer img{
     width: 75px;
 }
 
