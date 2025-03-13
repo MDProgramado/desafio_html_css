@@ -33,7 +33,7 @@
         display: flex;
         flex-wrap: wrap; 
         justify-content: center;
-        gap: 20px; 
+        gap: 1.25rem; 
     }
 
     .cars-main .car {
@@ -47,44 +47,45 @@
     .cars-main .car img {
         width: 100%; 
         height: auto; 
-        max-width: 300px; 
+        max-width: 18.75rem; 
     }
 
     .checkbox {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; 
+        gap: 0.625rem; 
     }
 
     .checkbox__container__texto__info {
-        margin-top: 10px; 
+        margin-top: 0.625rem; 
     }
 
     .checkbox__container__img__info {
-        width: 24px; 
-        height: 24px;
+        width: 1.5rem; 
+        height: 1.5rem;
     }
 
     .cars-main .info {
         width: 100%; 
-        margin-top: 10px; 
+        margin-top: 0.625rem; 
 
     .button-main {
         width: auto; 
-        padding: 10px 20px; 
-        margin-top: 10px; 
+        padding: 0.625rem 1.25rem; 
+        margin-top: 0.625rem; 
     }
 }
 
 /* Media query Contato */
     .form-main {
-        padding: 10px; 
+        padding: 0.625rem; 
+        margin: auto;
     }
 
     .form-group input, 
     .form-group select {
-        padding: 10px
+        padding: 0.625rem;
     }
     
     
@@ -110,10 +111,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    /* Header - Ajuste de proporções */
+    
     header {
       height: 6.25rem;
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
     }
   
     .logo-header {
@@ -122,14 +123,14 @@
   
    
     nav li {
-      margin: 0 20px;
+      margin: 0 1.25rem;
       font-size: 1.05rem;
     }
   
     
     .main_container {
-      margin-top: 100px; 
-      padding: 20px 40px;
+      margin-top: 6.25rem; 
+      padding: 1.25rem 2.25rem;
     }
   
     
@@ -172,7 +173,7 @@
 @media (min-width: 1440px) {
     
     header {
-      height: 100px;
+      height: 6.25rem;
       padding: 0.9375rem 1.875rem;
     }
   
