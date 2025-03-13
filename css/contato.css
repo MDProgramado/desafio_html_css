@@ -171,11 +171,12 @@ footer {
 
 .footer-container{
     padding: 10px;
-    margin: auto;
+    margin: 0 auto;
     display:flex;
     text-align: center;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .social-icons {
@@ -203,5 +204,7 @@ footer {
 
 .logo-footer {
     float: right;
+    position: absolute; 
+    right: 0;
 }
   
