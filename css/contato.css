@@ -199,6 +199,10 @@ footer {
     transition: transform 0.3s;
 }
 
+.logo-footer {
+    width: 75px;
+}
+
 
 
 
