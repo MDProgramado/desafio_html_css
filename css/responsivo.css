@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1200px) 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .main-container {
         max-width: 100%;
         max-height: 100%;
@@ -25,10 +25,10 @@
         font-size: x-large;
     }
 }
-/* Mdia query Lançamento */
+
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    /* Seção de Carros */
+   
     .cars-main {
         display: flex;
         flex-wrap: wrap; 
@@ -152,9 +152,7 @@
     }
   
   
-    footer {
-      padding: 1.5652rem 0.9375rem;
-    }
+ 
   
     .social-icons img {
          margin-bottom: 1.25rem;
@@ -163,7 +161,7 @@
       margin: 0 0.625rem;
     }
   
-    /* Grid de carros - 2 colunas */
+   
     .cars-main {
       gap: 1.5rem;
       padding: 1.5rem;
@@ -178,7 +176,7 @@
 @media (min-width: 1440px) {
     
     header {
-      height: 6.25rem;
+      height: 7.5rem;
       padding: 0.9375rem 1.875rem;
     }
   
@@ -214,29 +212,7 @@
     }
   
    
-    footer {
-      padding: 1.875rem   1.25rem;
-    }
-  
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-          max-width: 90rem;
-          margin: 0 auto;
-          padding: 0 3.125rem;
-    }
-  
-    .social-icons img {
-     margin-bottom: 1.25rem;
-      width: 2.1875rem;
-      height: 2.1875rem;
-      margin: 0 0.75rem;
-    }
-  
-    .copyright_footer {
-      font-size: 1.1rem;
-    }
+    
   }
 
   @media (min-width: 768px) and (max-width: 1200px) {

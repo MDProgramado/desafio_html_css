@@ -178,7 +178,7 @@ footer {
 
 .social-icons {
     display: flex;
-    align-itemns: center;
+    align-items: center;
     text-align: center;
     padding: 0rem 1.25rem;
     
@@ -186,7 +186,7 @@ footer {
 
 .social-icons img {
     display: flex;
-    align-itemns: center;
+    align-items: center;
     width: 1.875rem;
     height: auto;
     transition: opacity 0.2s ease;
@@ -200,7 +200,7 @@ footer {
 }
 .logo-footer  {
      display: flex;
-    align-itemns: center;
+     align-items: center;
     text-align: center;
     padding: 0rem 1.25rem;
 }
