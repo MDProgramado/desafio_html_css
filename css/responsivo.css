@@ -309,8 +309,8 @@
     }
     a {
        
-        width: 0;
-      height: 0;
+        width: 43px;
+      height: auto;
     }
     
 }
@@ -332,8 +332,8 @@
     a {
         
         
-            width: 0;
-          height: 0;
+            width: 43px;
+          height: auto;
     }
 }
   
