@@ -2,7 +2,7 @@
     --primary-color: rgb(0, 61, 165);
     --secondary-color: #000000;
     --terciary-color: #ffffff;
-    --hover-color: #ffcc00;
+    --hover-color: rgb(0, 61, 165);
 }
 * {
     box-sizing: border-box;
