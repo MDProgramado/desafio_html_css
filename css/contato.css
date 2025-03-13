@@ -177,6 +177,8 @@ footer {
 }
 
 .social-icons {
+    display: flex;
+    align-itemns: center;
     padding: 0rem 1.25rem;
     display: flex;  
 }
