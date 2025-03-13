@@ -297,5 +297,16 @@
       flex: 1 1 22rem;
       max-width: 22rem;
     }
+
+@media (max-width: 768px) {
+    
+    .social-icons {
+        padding: 0;
+    }
+
+    .logo-footer {
+        padding: 0;
+    }
+}
   
 
