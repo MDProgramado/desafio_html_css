@@ -309,18 +309,23 @@
     }
 }
 
-@media (max-width: 362px) {
+@media (max-width: 370px) {
     
     .social-icons {
         padding: 0;
+         margin: 0;
+        
     }
 
     .logo-footer {
         padding: 0;
+         margin: 0;
     }
 
     .footer-container {
         margin: 0;
+        padding: 0;
+    }
 }
   
 
