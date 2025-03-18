@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-color: rgb(0, 61, 165);
     --secondary-color: #000000;
@@ -13,8 +15,10 @@
 
    body {
     
-    font-family: Arial, sans-serif;
-    display: flex;
+    font-family: "Roboto", sans-serif;
+   font-weight: 500; 
+    font-style: normal;
+    display: block;
     flex-direction: column;
     min-height: 100vh;
     padding-bottom: 150px;
